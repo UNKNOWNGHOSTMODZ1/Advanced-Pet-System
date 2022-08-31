@@ -1,0 +1,20 @@
+To Apply The Theme Copy One And Paste It Where $Image[Code]] At 🙂
+
+PetInfo Theme - 1
+
+$image[https://gmerlini.sirv.com/30C4B6BE-6076-42B9-82ED-BCA1840D5861.jpeg?text.0.text=$getUserVar[Heath]%25&text.0.position.x=-60%25&text.0.position.y=-79%25&text.0.size=22&text.0.color=ff0000&text.0.font.style=italic&text.1.text=$getUserVar[Bond]%25&text.1.position.x=-60%25&text.1.position.y=-52%25&text.1.size=22&text.1.color=ff0000&text.1.font.style=italic&text.2.text=$getUserVar[Food]%25&text.2.position.x=-60%25&text.2.position.y=-30%25&text.2.size=22&text.2.color=ff0000&text.2.font.style=italic&text.3.text=$getUserVar[Water]%25&text.3.position.x=-60%25&text.3.position.y=-5%25&text.3.size=22&text.3.color=ff0000&text.3.font.style=italic]]
+
+PetInfo Next Button Theme - 1
+
+$image[https://gmerlini.sirv.com/54ED025F-4F99-4D16-9C3E-52F503C31E95.jpeg?text.0.text=$getUserVar[Name]&text.0.position.x=-69%25&text.0.position.y=-74%25&text.0.size=22&text.0.color=000000&text.0.font.style=italic&text.1.text=$getUserVar[Age]%20Year&text.1.position.x=-69%25&text.1.position.y=-41%25&text.1.size=22&text.1.color=000000&text.1.font.style=italic&text.2.text=$getUserVar[Gender]&text.2.position.x=-70%25&text.2.position.y=-11%25&text.2.size=22&text.2.color=000000&text.2.font.style=italic]]
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+PetInfo Theme - 2
+
+$image[https://gmerlini.sirv.com/Discord%20APIs/46349207-FE04-4D8E-A3E3-5DE3E2BDE9FC.jpeg?text.0.text=$getUserVar[Heath]%25&text.0.position.x=-40%25&text.0.position.y=-49%25&text.0.size=20&text.0.color=ffffff&text.0.font.family=Acme&text.0.font.weight=700&text.0.font.style=italic&text.0.outline.width=4&text.1.text=$getUserVar[Bond]%25&text.1.position.x=-40%25&text.1.position.y=-76%25&text.1.size=20&text.1.color=fbfbfb&text.1.font.family=Acme&text.1.font.weight=700&text.1.font.style=italic&text.1.outline.width=4&text.2.text=$getUserVar[Food]%25&text.2.position.x=-40%25&text.2.position.y=-25%25&text.2.size=20&text.2.color=ffffff&text.2.font.family=Acme&text.2.font.weight=700&text.2.font.style=italic&text.2.outline.width=4&text.3.text=$getUserVar[Water]%25&text.3.position.x=-40%25&text.3.position.y=-2%25&text.3.size=20&text.3.color=fffafa&text.3.font.family=Acme&text.3.font.weight=700&text.3.font.style=italic&text.3.outline.width=4]]
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+PetInfo Next Button Theme - 2
+
+$image[https://gmerlini.sirv.com/Discord%20APIs/DEAFB5D0-BA0B-4B4D-882E-BA54B1B41132.jpeg?text.0.text=$getUserVar[Name]&text.0.position.x=-45%25&text.0.position.y=-75%25&text.0.size=20&text.0.color=ffffff&text.0.font.family=Acme&text.0.font.weight=700&text.0.font.style=italic&text.0.outline.width=4&text.1.text=$getUserVar[Age]%20Years&text.1.position.x=-43%25&text.1.position.y=-40%25&text.1.size=20&text.1.color=ffffff&text.1.font.family=Acme&text.1.font.weight=700&text.1.font.style=italic&text.1.outline.width=4&text.2.text=$getUserVar[Gender]&text.2.position.x=-43%25&text.2.position.y=-9%25&text.2.size=20&text.2.color=ffffff&text.2.font.family=Acme&text.2.font.weight=700&text.2.font.style=italic&text.2.outline.width=4]]
