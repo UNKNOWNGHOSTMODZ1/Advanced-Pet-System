@@ -1,0 +1,397 @@
+> All Vars Below ⬇️
+
+PetOwner =
+
+Heath = 50
+
+Bond = 50
+
+Food = 50
+
+Water = 50
+
+Name =
+
+Age = 0
+
+Gender =
+
+⚠️ Warning ⚠️
+Give Credit To Me Because I Worked Hard On This!.
+
+> First Code
+> Enable BDScript
+
+$nomention
+$color[#fff] - This Can Be Edited
+
+$footer[Coded By unknown ghost modz]
+
+$deletecommand
+
+$setServerVar[PetOwner;$authorID]
+
+$author[Pet Panel]
+$title[*__BotName__*]
+$description[
+```Welcome!```
+$username
+
+*Select A Menu*
+
+*To Select The Option You Want*
+
+**Tip**
+*You Can View You're Pet Status*
+*By Using* __(Prefixs)PetInfo__]
+
+$newSelectMenu[PetMenu;1;1;Select A Option ]
+
+$addSelectMenuOption[PetMenu;Feed Pet;PetMenu-1;Choose For Feeding Pet;no;]
+
+$addSelectMenuOption[PetMenu;Play With Pet;PetMenu-2;Choose For Playing With Your Pet;no;]
+
+$addSelectMenuOption[PetMenu;Water Pet;PetMenu-3;Choose For Watering Pet;no;]
+
+$newSelectMenu[PetMenu1;1;1;Select A Option ]
+
+$addSelectMenuOption[PetMenu1;Jack;PetName-1;Choose For Nameing You’re Pet;no;]
+
+$addSelectMenuOption[PetMenu1;Zeus;PetName-2;Choose For Nameing You’re Pet;no;]
+
+$addSelectMenuOption[PetMenu1;Joe;PetName-3;Choose For Nameing You’re Pet;no;]
+
+$addSelectMenuOption[PetMenu1;Joey;PetName-4;Choose For Nameing You’re Pet;no;]
+
+$addSelectMenuOption[PetMenu1;Zoe;PetName-5;Choose For Nameing You’re Pet;no;]
+
+$addSelectMenuOption[PetMenu1;Zoey;PetName-6;Choose For Nameing You’re Pet;no;]
+
+$newSelectMenu[PetMenu2;1;1;Select A Option ]
+
+$addSelectMenuOption[PetMenu2;1 Year;PetAge-1;Choose For Setting You’re Pet Age;no;]
+
+$addSelectMenuOption[PetMenu2;2 Year;PetAge-2;Choose For Setting You’re Pet Age;no;]
+
+$addSelectMenuOption[PetMenu2;3 Year;PetAge-3;Choose For Setting You’re Pet Age;no;]
+
+$addSelectMenuOption[PetMenu2;4 Year;PetAge-4;Choose For Setting You’re Pet Age;no;]
+
+$addSelectMenuOption[PetMenu2;5 Year;PetAge-5;Choose For Setting You’re Pet Age;no;]
+
+$addSelectMenuOption[PetMenu2;6 Year;PetAge-6;Choose For Setting You’re Pet Age;no;]
+
+$addSelectMenuOption[PetMenu2;7 Year;PetAge-7;Choose For Setting You’re Pet Age;no;]
+
+$newSelectMenu[PetMenu3;1;1;Select A Option ]
+
+$addSelectMenuOption[PetMenu3;Male;PetGender-1;Choose For Setting You’re Pet Gender;no;]
+
+$addSelectMenuOption[PetMenu3;Female;PetGender-2;Choose For Setting You’re Pet Gender;no;]
+
+> PetInfo Code
+> Enable BDScript 2
+
+$nomention
+$color[#fff] - This Can Be Edited
+
+$footer[Coded By unknown ghost modz]
+
+$deletecommand
+
+$author[Pet Info System]
+$title[*__BotName__*] 
+$description[
+> User: $username
+$image[https://gmerlini.sirv.com/30C4B6BE-6076-42B9-82ED-BCA1840D5861.jpeg?text.0.text=$getUserVar[Heath]%25&text.0.position.x=-60%25&text.0.position.y=-79%25&text.0.size=22&text.0.color=110303&text.0.font.style=italic&text.1.text=$getUserVar[Bond]%25&text.1.position.x=-60%25&text.1.position.y=-52%25&text.1.size=22&text.1.color=000000&text.1.font.style=italic&text.2.text=$getUserVar[Food]%25&text.2.position.x=-60%25&text.2.position.y=-30%25&text.2.size=22&text.2.color=000000&text.2.font.style=italic&text.3.text=$getUserVar[Water]%25&text.3.position.x=-60%25&text.3.position.y=-5%25&text.3.size=22&text.3.color=000000&text.3.font.style=italic]]
+
+$addButton[no;PreviousPage;Previous Page;secondary;no]
+
+$addButton[no;NextInfo;Next Page;secondary;no]
+
+$addButton[no;ExitPet;Exit Pet Menu;danger;no]
+
+> Select Menus Codes Below ⬇️ 
+
+> 1ST Code
+> Enable BDScript 2
+
+$onInteraction[PetMenu]
+
+$nomention
+$color[#fff] - This Can Be Edited
+
+$footer[Coded By unknown ghost modz]
+
+$if[$message==PetMenu-1]
+$author[Feeding You're Pet]
+$title[*__BotName__*]
+$description[
+*You Have Fed You're Animal*
+> $username]
+
+$setUserVar[Heath;$sum[$getUserVar[Heath];$randomText[1;1]]]
+
+$setUserVar[Food;$sum[$getUserVar[Food];$randomText[1;1]]]
+
+$endif
+
+$if[$message==PetMenu-2]
+$author[Playing With You're Pet]
+$title[*__BotName__*]
+$description[
+*You Have Played $randomText[ball;Fetch;Tug Of War] With You're Animal*
+> $username]
+
+$setUserVar[Bond;$sum[$getUserVar[Bond];$randomText[1;1]]]
+$endif
+
+$if[$message==PetMenu-3]
+$author[Watering You're Pet]
+$title[*__BotName__*]
+$description[
+*You Have Water You're Animal*
+> $username]
+
+$setUserVar[Heath;$sum[$getUserVar[Heath];$randomText[1;1]]]
+
+$setUserVar[Water;$sum[$getUserVar[Water];$randomText[1;1]]]
+$endif
+
+> 2ND Code
+> Enable BDScript 2
+
+$onInteraction[PetMenu1]
+
+$color[#fff] - This Can Be Edited
+
+$footer[Coded By unknown ghost modz]
+
+$if[$message==PetName-1]
+$author[Nameing You're Pet]
+$title[*__BotName__*]
+$description[
+*You Have Name You're Animal*
+> $username]
+
+$setUserVar[Name;$randomText[PetName;PetName]]
+
+$endif
+
+$if[$message==PetName-2]
+$author[Nameing You're Pet]
+$title[*__BotName__*]
+$description[
+*You Have Name You're Animal*
+> $username]
+
+$setUserVar[Name;$randomText[PetName;PetName]]
+
+$endif
+
+$if[$message==PetName-3]
+$author[Nameing You're Pet]
+$title[*__BotName__*]
+$description[
+*You Have Name You're Animal*
+> $username]
+
+$setUserVar[Name;$randomText[PetName;PetName]]
+
+$endif
+
+$if[$message==PetName-4]
+$author[Nameing You're Pet]
+$title[*__BotName__*]
+$description[
+*You Have Name You're Animal*
+> $username]
+
+$setUserVar[Name;$randomText[PetName;PetName]]
+
+$endif
+
+$if[$message==PetName-5]
+$author[Nameing You're Pet]
+$title[*__BotName__*]
+$description[
+*You Have Name You're Animal*
+> $username]
+
+$setUserVar[Name;$randomText[PetName;PetName]]
+
+$endif
+
+$if[$message==PetName-6]
+$author[Nameing You're Pet]
+$title[*__BotName__*]
+$description[
+*You Have Name You're Animal*
+> $username]
+
+$setUserVar[Name;$randomText[PetName;PetName]]
+
+$endif
+
+> 3RD Code
+> Enable BDScript 2
+
+$onInteraction[PetMenu2]
+
+$color[#fff] - This Can Be Edited
+
+$footer[Coded By unknown ghost modz]
+
+$if[$message==PetAge-1]
+$author[Age You're Pet]
+$title[*__BotName__*]
+$description[
+*You Have Set You're Animal Age*
+*As: **__1__** Year*
+> $username]
+
+$setUserVar[Age;$sum[$getUserVar[Age];$randomText[1;1]]]
+
+$endif
+
+$if[$message==PetAge-2]
+$author[Age You're Pet]
+$title[*__BotName__*]
+$description[
+*You Have Set You're Animal Age*
+*As: **__2__** Years*
+> $username]
+
+$setUserVar[Age;$sum[$getUserVar[Age];$randomText[2;2]]]
+
+$endif
+
+$if[$message==PetAge-3]
+$author[Age You're Pet]
+$title[*__BotName__*]
+$description[
+*You Have Set You're Animal Age*
+*As: **__3__** Years*
+> $username]
+
+$setUserVar[Age;$sum[$getUserVar[Age];$randomText[3;3]]]
+
+$endif
+
+$if[$message==PetAge-4]
+$author[Age You're Pet]
+$title[*__BotName__*]
+$description[
+*You Have Set You're Animal Age*
+*As: **__4__** Years*
+> $username]
+
+$setUserVar[Age;$sum[$getUserVar[Age];$randomText[4;4]]]
+
+$endif
+
+$if[$message==PetAge-5]
+$author[Age You're Pet]
+$title[*__BotName__*]
+$description[
+*You Have Set You're Animal Age*
+*As: **__5__** Years*
+> $username]
+
+$setUserVar[Age;$sum[$getUserVar[Age];$randomText[5;5]]]
+
+$endif
+
+$if[$message==PetAge-6]
+$author[Age You're Pet]
+$title[*__BotName__*]
+$description[
+*You Have Set You're Animal Age*
+*As: **__6__** Years*
+> $username]
+
+$setUserVar[Age;$sum[$getUserVar[Age];$randomText[6;6]]]
+
+$endif
+
+$if[$message==PetAge-7]
+$author[Age You're Pet]
+$title[*__BotName__*]
+$description[
+*You Have Set You're Animal Age*
+*As: **__7__** Years*
+> $username]
+
+$setUserVar[Age;$sum[$getUserVar[Age];$randomText[7;7]]]
+
+$endif
+
+> 4TH Code
+> Enable BDScript 2
+
+$onInteraction[PetMenu3]
+
+$color[#fff] - This Can Be Edited
+
+$footer[Coded By unknown ghost modz]
+
+$if[$message==PetGender-1]
+$author[Gender You're Pet]
+$title[*__BotName__*]
+$description[
+*You Have Set You're Animal Age*
+*As: **__Male__** Year*
+> $username]
+
+$setUserVar[Gender;$randomText[Male;Male]]
+
+$endif
+
+$if[$message==PetGender-2]
+$author[Gender You're Pet]
+$title[*__BotName__*]
+$description[
+*You Have Set You're Animal Gender*
+*As: **__Female__** Year*
+> $username]
+
+$setUserVar[Gender;$randomText[Female;Female]]
+
+$endif
+
+> 5Th Code
+> Enable BDScript 2
+
+$onInteraction
+
+$color[#fff] - This Can Be Edited
+
+$footer[Coded By unknown ghost modz]
+
+$onlyIf[$checkContains[$customID;PreviousPage;NextInfo;ExitPet]==true;]
+
+$if[$customID==PreviousPage]
+$author[Pet Info System]
+$title[*__BotName__*] 
+$description[
+> User: <@$getServerVar[PetOwner]>
+$image[https://gmerlini.sirv.com/30C4B6BE-6076-42B9-82ED-BCA1840D5861.jpeg?text.0.text=$getUserVar[Heath]%25&text.0.position.x=-60%25&text.0.position.y=-79%25&text.0.size=22&text.0.color=110303&text.0.font.style=italic&text.1.text=$getUserVar[Bond]%25&text.1.position.x=-60%25&text.1.position.y=-52%25&text.1.size=22&text.1.color=000000&text.1.font.style=italic&text.2.text=$getUserVar[Food]%25&text.2.position.x=-60%25&text.2.position.y=-30%25&text.2.size=22&text.2.color=000000&text.2.font.style=italic&text.3.text=$getUserVar[Water]%25&text.3.position.x=-60%25&text.3.position.y=-5%25&text.3.size=22&text.3.color=000000&text.3.font.style=italic]]
+$endif
+
+$if[$customID==NextInfo]
+$author[Page - 2]
+$title[*__BotName__*]
+$description[
+> User: <@$getServerVar[PetOwner]>
+$image[https://gmerlini.sirv.com/54ED025F-4F99-4D16-9C3E-52F503C31E95.jpeg?text.0.text=$getUserVar[Name]&text.0.position.x=-69%25&text.0.position.y=-74%25&text.0.size=22&text.0.color=000000&text.0.font.style=italic&text.1.text=$getUserVar[Age]%20Year&text.1.position.x=-69%25&text.1.position.y=-41%25&text.1.size=22&text.1.color=000000&text.1.font.style=italic&text.2.text=$getUserVar[Gender]&text.2.position.x=-70%25&text.2.position.y=-11%25&text.2.size=22&text.2.color=000000&text.2.font.style=italic]]
+$endif
+
+$if[$customID==ExitPet]
+$deleteIn[5s]
+$author[Exit Pet Menu]
+$title[*__BotName__*]
+$description[
+*__Exiting Pet Menu__*
+> $username]
+$removeButtons
+$endif
